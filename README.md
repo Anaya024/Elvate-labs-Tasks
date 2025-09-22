@@ -1,4 +1,3 @@
-# Elvate-labs-Tasks
 Task 1 (what i did)
 What I ran
 1) Find your IP on Linux/macOS
