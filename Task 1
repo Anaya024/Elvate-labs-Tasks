@@ -1,0 +1,45 @@
+1st command :(hostname -I)
+2nd command(sudo nmap -sn 192.168.1.0/24 -oN live-hosts.txt)
+Result:
+nmap scan report for Dummy-1
+Host is up (0.00049s latency).
+MAC Address: 00:50:56:C0:00:08 (VMware)
+Nmap scan report for Dummy-2
+Host is up (0.00073s latency).
+MAC Address: 00:50:56:EF:96:E9 (VMware)
+Nmap scan report for Dummy-3
+Host is up.
+
+3rd command:(sudo nmap -sS 192.168.1.0/24 -oA myscan)
+
+Nmap done at Mon Sep 22 11:44:41 2025 -- 256 IP addresses (3 hosts up) scanned in 28.00 seconds
+Nmap 7.95 scan initiated Mon Sep 22 11:46:06 2025 as: /usr/lib/nmap/nmap -sS -oA myscan 192.168.181.0/24
+Nmap scan report for Dummy-1
+Host is up (0.0019s latency).
+All 1000 scanned ports on Dummy-1 are in ignored states.
+Not shown: 1000 filtered tcp ports (no-response)
+MAC Address: 00:50:56:C0:00:08 (VMware)
+
+Nmap scan report for Dummy-2
+Host is up (0.00055s latency).
+All 1000 scanned ports on Dummy-2 are in ignored states.
+Not shown: 1000 filtered tcp ports (no-response)
+MAC Address: 00:50:56:EF:96:E9 (VMware)
+
+Nmap scan report for Dummy-3
+Host is up (0.0000050s latency).
+All 1000 scanned ports on Dummy-3 are in ignored states.
+Not shown: 1000 closed tcp ports (reset)
+
+Nmap done at Mon Sep 22 11:47:15 2025 -- 256 IP addresses (3 hosts up) scanned in 69.42 seconds
+
+Command 4:(sudo nmap -sS -sV -O 192.168.1.42 -oN host-192-168-1-42.txt)
+Nmap 7.95 scan initiated Mon Sep 22 12:14:26 2025 as: /usr/lib/nmap/nmap -sS -sV -O -oN host-192-168-181-128.txt Dummy-3
+Nmap scan report for Dummy-3
+Host is up (0.00016s latency).
+All 1000 scanned ports on Dummy-3 are in ignored states.
+Not shown: 1000 closed tcp ports (reset)
+Too many fingerprints match this host to give specific OS details
+Network Distance: 0 hops
+
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
